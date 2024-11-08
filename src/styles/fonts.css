@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Play';
+     src:url('../assets/fonts/PlaywriteCO-VariableFont_wght.ttf') format('truetype'); 
+  }
+
+  .fontFamily {
+    font-family: 'Play', serif; 
+  }

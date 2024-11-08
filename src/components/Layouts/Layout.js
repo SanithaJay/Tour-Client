@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../Header/Header";
+import Section1 from "../Sections/Section1";
 
 
 const Layout = () =>
@@ -7,6 +8,7 @@ const Layout = () =>
     return (
         <>
             <Header />
+            <Section1/>
         </>
     );
 };
