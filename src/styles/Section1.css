@@ -1,0 +1,43 @@
+.section1-container {
+    margin-top: 80px;
+}
+
+.know-before {
+    padding: '0.3rem 3rem';
+        width: 'fit-content';
+        text-Align: 'justify';
+        font-Style: 'italic';
+}
+
+.world-icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 3px;
+}
+
+.section1-title {
+    font-size: 3.1rem;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: #ffc107;
+}
+
+.section1-description {
+    color: rgba(158, 157, 154, 1);
+    font-size: 18px;
+    line-height: 1.8em;
+}
+
+.section1-card {
+    height: 350px;
+    border-radius: 15px;
+    border: 2px solid #ffc107;
+    overflow: hidden;
+}
+
+.card-img-top {
+    height: 100%;
+    object-fit: cover;
+}

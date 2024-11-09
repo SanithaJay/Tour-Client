@@ -1,57 +1,34 @@
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../assets/images/logo.png"
+import logo from "../../assets/images/logo.png";
+import '../../styles/Header.css';  // Import the CSS file
 
-const Header = () =>
-{
+const Header = () => {
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light ">
-                <div className="container">
-                    <Link className="navbar-brand" to="/" style={ { marginLeft: '130px' } }>
-                        <img src={ logo } alt="logo" style={ { width: '180px' } } /></Link>
-                    <button
-                        className="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav"
-                        aria-controls="navbarNav"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarNav">
-                        <ul className="navbar-nav ms-auto " style={ { marginRight: '60px', display: 'flex', gap: '20px' } }>
+                <div className="container " >
+                    <Link className="navbar-brand custom-brand" to="/">
+                        <img src={logo} alt="logo" className="logo-img" />
+                    </Link>
+                   
+                    <div className="collapse navbar-collapse custom-navbar" id="navbarNav" >
+                        <ul className="navbar-nav ms-auto custom-nav">
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/"
-                                    style={ ( { isActive } ) => ( {
-                                        color: isActive ? '#ffc107' : 'black',
-                                        fontWeight: 500
-                                    } ) }>Home</NavLink>
+                                <NavLink className="nav-link" to="/" activeClassName="active-link">Home</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/tours"
-                                    style={ ( { isActive } ) => ( {
-                                        color: isActive ? '#ffc107' : 'black',
-                                        fontWeight: 500
-                                    } ) }>Tours</NavLink>
+                                <NavLink className="nav-link" to="/tours" activeClassName="active-link">Tours</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/login"
-                                    style={ ( { isActive } ) => ( {
-                                        color: isActive ? '#ffc107' : 'black',
-                                        fontWeight: 500
-                                    } ) }>Login</NavLink>
+                                <NavLink className="nav-link" to="/login" activeClassName="active-link">Login</NavLink>
                             </li>
                             <li className="nav-item">
-                                <Link className="btn btn-warning "
-                                    style={ { color: 'white', borderRadius: '20px', minWidth: '120px' } } to="/register">Register</Link>
+                                <Link className="btn btn-warning register-btn" to="/register">Register</Link>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
-
         </div>
     );
 };
