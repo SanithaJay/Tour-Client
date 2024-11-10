@@ -10,16 +10,13 @@ const Section3 = () => {
     return (
         <div className="container  section3-container">
             <div className="row">
-                {/* First, the larger component taking more space */}
-                <div className="col-md-3 mb-4"> {/* Increased column size to 6 */}
+                <div className="col-md-3 mb-4"> 
                     <div className="section3-first-component">
                         <p className='fontFamily section3-serve'>What we serve</p>
                         <h2>We offer our best services</h2>
                     </div>
-                </div>
-
-                {/* Then, the three cards, each taking 2 columns */}
-                <div className="col-md-3 mb-4"> {/* Set column size to 2 */}
+                </div>         
+                <div className="col-md-3 mb-4"> 
                     <div className="section3-card">
                        <div className=" section3-imageIcons-shape d-flex align-items-center justify-content-center">
                          <img className="section3-imageIcons" src={weather} alt="weather"/></div>
