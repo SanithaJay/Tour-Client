@@ -6,3 +6,12 @@
     margin-left: 10px;
     max-width: 95px;
 }
+.card-image{
+    height: '200px';
+    object-fit: 'cover';
+}
+.city-spacing {
+   
+  }
+
+  
