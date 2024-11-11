@@ -7,7 +7,7 @@ import videoSrc from '../../assets/videos/waterfall.mp4';
 const KnowBefore = () =>
 {
     return (
-        <div className="container section1-container" >
+        <div className="container knowbefore-container" >
             <div className="row">
 
                 <div className="col-md-6 mt-5">
@@ -21,14 +21,14 @@ const KnowBefore = () =>
                     </div>
                     <div className="row">
                         <div className="col-12">
-                            <h1 className="section1-title">
+                            <h1 className="knowbefore-title">
                                 Travelling opens the doors to creating{ ' ' }
                                 <span className="highlight">memories</span>
                             </h1>
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-12 mt-4 section1-description">
+                        <div className="col-12 mt-4 knowbefore-description">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
                             consequatur dolore nam modi labore facere id ut veniam itaque
                             quasi, sunt unde? Mollitia id soluta animi repudiandae omnis
@@ -43,14 +43,14 @@ const KnowBefore = () =>
                     <div className="row">
 
                         <div className="col-12 col-md-4 mb-4 ">
-                            <div className="card section1-card" style={ { marginTop: '30px' } }>
+                            <div className="card knowbefore-card" style={ { marginTop: '30px' } }>
                                 <img src={ image1 } alt="nature beauty" className="card-img-top" />
                             </div>
                         </div>
 
 
                         <div className="col-12 col-md-4 mb-4">
-                            <div className="card section1-card" style={ { marginTop: '50px' } }>
+                            <div className="card knowbefore-card" style={ { marginTop: '50px' } }>
                                 <video className="card-img-top" controls>
                                     <source src={ videoSrc } type="video/mp4" />
                                     Your browser does not support the video tag.
@@ -59,7 +59,7 @@ const KnowBefore = () =>
                         </div>
 
                         <div className="col-12 col-md-4 mb-4">
-                            <div className="card section1-card" style={ { marginTop: '70px' } }>
+                            <div className="card knowbefore-card" style={ { marginTop: '70px' } }>
                                 <img src={ image3 } alt="nature beauty" className="card-img-top" />
                             </div>
                         </div>

@@ -2,12 +2,13 @@ import React from 'react';
 import '../../styles/Featured_Tour.css';
 import useFetch from '../../hooks/useFetch';
 import { BASE_URL } from '../../utils/config';
+import { Link } from 'react-router-dom';
 
 const FeaturedTours = () =>
 {
   const { data: tourData, loading, error } = useFetch( `${ BASE_URL }/tour/getAllTour` );
 
-  
+
   //console.log( "Fetched tour data:", tourData );
 
   const isValidTourData = Array.isArray( tourData ) && tourData.length > 0;
@@ -34,7 +35,7 @@ const FeaturedTours = () =>
                           alt={ tour.title }
                           className="card-img-top card-image"
                         />
-                        
+
                         { tour.featured && (
                           <span className="position-absolute bottom-0 end-0 m-0 bg-warning text-white p-0 ">
                             Featured
@@ -59,7 +60,10 @@ const FeaturedTours = () =>
                           </div>
                         </div>
 
-                        <h5 className="card-title">{ tour.title }</h5>
+                        <h5 className="card-title"> <Link
+                          to="" // Adjust the URL based on your booking route
+                          className="tour-title-link"
+                        >{ tour.title } </Link></h5>
                         <div className="d-flex justify-content-between align-items-center">
                           <h6 className="text-warning">${ tour.price } <span className="text-muted">/per person</span></h6>
                           <button className="btn btn-warning btn-sm text-white">Book Now</button>

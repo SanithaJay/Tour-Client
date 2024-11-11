@@ -1,15 +1,15 @@
-.section3-container {
+.service-container {
     margin-top: 80px;
 }
 
-.section3-first-component {
+.service-first-component {
 
     padding: 20px;
     border-radius: 8px;
 
 }
 
-.section3-card {
+.service-card {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -19,18 +19,18 @@
     border-right: 1px solid #e76f0d; 
 }
 
-.section3-card h5 {
+.service-card h5 {
     font-size: 1.7rem;
 }
 
-.section3-serve {
+.service-serve {
     font-size: 10px !important;
     font-style: italic;
     color: red;
 
 }
 
-.section3-imageIcons-shape {
+.service-imageIcons-shape {
     border-radius: 50%;
     background-color: #e76f0d;
     width: 50px;
@@ -41,18 +41,18 @@
 
 }
 
-.section3-description {
+.service-description {
     color: rgba(158, 157, 154, 1);
 }
 
-.section3-imageIcons {
+.service-imageIcons {
     width: 70%;
     height: 70%;
     object-fit: cover;
 }
 
-.section3-first-component p,
-.section3-card p {
+.service-first-component p,
+.service-card p {
     font-size: 1rem;
 
 }

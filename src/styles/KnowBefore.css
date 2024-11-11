@@ -1,4 +1,4 @@
-.section1-container {
+.knowbefore-container {
     margin-top: 80px;
 }
 
@@ -15,7 +15,7 @@
     margin-left: 3px;
 }
 
-.section1-title {
+.knowbefore-title {
     font-size: 3.1rem;
     margin-bottom: 10px;
 }
@@ -24,13 +24,13 @@
     color: #ffc107;
 }
 
-.section1-description {
+.knowbefore-description {
     color: rgba(158, 157, 154, 1);
     font-size: 18px;
     line-height: 1.8em;
 }
 
-.section1-card {
+.knowbefore-card {
     height: 350px;
     border-radius: 15px;
     border: 2px solid #ffc107;
