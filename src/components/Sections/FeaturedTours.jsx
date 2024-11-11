@@ -7,8 +7,8 @@ const FeaturedTours = () =>
 {
   const { data: tourData, loading, error } = useFetch( `${ BASE_URL }/tour/getAllTour` );
 
-  // Log the data to verify the structure
-  console.log( "Fetched tour data:", tourData );
+  
+  //console.log( "Fetched tour data:", tourData );
 
   const isValidTourData = Array.isArray( tourData ) && tourData.length > 0;
 
@@ -54,7 +54,7 @@ const FeaturedTours = () =>
                               <i className="bi bi-star"></i>
                             </span>
                             <span className="text-muted ml-1">
-                              { tour.reviewCount ? `${ tour.reviewCount } (${ tour.reviewCount })` : 'Not rated' }
+                              { tour.reviewCount ? `${ tour.reviewRating } (${ tour.reviewCount })` : 'Not rated' }
                             </span>
                           </div>
                         </div>

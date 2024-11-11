@@ -1,12 +1,12 @@
 import React from 'react';
-import '../../styles/Section2.css';
+import '../../styles/Search.css';
 import SearchIcon from '@mui/icons-material/Search';
 import IconButton from '@mui/material/IconButton';
 import PlaceOutlinedIcon from '@mui/icons-material/PlaceOutlined';
 import PinDropOutlinedIcon from '@mui/icons-material/PinDropOutlined';
 import GroupOutlinedIcon from '@mui/icons-material/GroupOutlined';
 
-const Section2 = () => {
+const Search = () => {
     return (
         <div className="section2-container">
             <div className="container mt-4 d-flex justify-content-start">
@@ -60,4 +60,4 @@ const Section2 = () => {
     );
 };
 
-export default Section2;
+export default Search;
