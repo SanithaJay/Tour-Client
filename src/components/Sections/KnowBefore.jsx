@@ -1,10 +1,10 @@
 import React from 'react';
-import '../../styles/Section1.css';
+import '../../styles/KnowBefore.css';
 import world from '../../assets/images/world.png';
 import image1 from '../../assets/images/hero-img01.jpg';
 import image3 from '../../assets/images/hero-img02.jpg';
 import videoSrc from '../../assets/videos/waterfall.mp4';
-const Section1 = () =>
+const KnowBefore = () =>
 {
     return (
         <div className="container section1-container" >
@@ -70,4 +70,4 @@ const Section1 = () =>
     );
 };
 
-export default Section1;
+export default KnowBefore;

@@ -1,12 +1,12 @@
 import React from 'react';
-import '../../styles/Section3.css';
+import '../../styles/Service.css';
 import weather from '../../assets/images/weather.png';
 import guide from '../../assets/images/guide.png';
 import customization from '../../assets/images/customization.png';
 
 
 
-const Section3 = () => {
+const Service = () => {
     return (
         <div className="container  section3-container">
             <div className="row">
@@ -45,4 +45,4 @@ const Section3 = () => {
     );
 };
 
-export default Section3;
+export default Service;

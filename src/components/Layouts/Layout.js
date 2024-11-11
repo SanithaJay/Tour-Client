@@ -1,9 +1,10 @@
 import React from "react";
 import Header from "../Header/Header";
-import Section1 from "../Sections/Section1";
-import Section3 from "../Sections/Section3";
-import FeaturedTours from "../Sections/FeaturedTours";
+import KnowBefore from "../Sections/KnowBefore";
 import Search from "../Sections/Search";
+import Service from "../Sections/Service";
+import FeaturedTours from "../Sections/FeaturedTours";
+
 
 
 const Layout = () =>
@@ -11,10 +12,10 @@ const Layout = () =>
     return (
         <>
             <Header />
-            <Section1/>
-            <Search/>
-            <Section3/>
-            <FeaturedTours/>
+            <KnowBefore />
+            <Search />
+            <Service />
+            <FeaturedTours />
         </>
     );
 };
