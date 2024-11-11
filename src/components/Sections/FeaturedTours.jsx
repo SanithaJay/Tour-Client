@@ -11,6 +11,7 @@ const FeaturedTours = () =>
             <h6 className="fontFamily p-2 rounded-pill bg-warning explore">
                 Explore
             </h6><h2>Our featured tours</h2>
+           
         </div>
     </div>
 </div>
