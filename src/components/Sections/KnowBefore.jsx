@@ -43,14 +43,14 @@ const KnowBefore = () =>
                     <div className="row">
 
                         <div className="col-12 col-md-4 mb-4 ">
-                            <div className="card knowbefore-card" style={ { marginTop: '30px' } }>
+                            <div className="card knowbefore-card card1" >
                                 <img src={ image1 } alt="nature beauty" className="card-img-top" />
                             </div>
                         </div>
 
 
                         <div className="col-12 col-md-4 mb-4">
-                            <div className="card knowbefore-card" style={ { marginTop: '50px' } }>
+                            <div className="card knowbefore-card card2" >
                                 <video className="card-img-top" controls>
                                     <source src={ videoSrc } type="video/mp4" />
                                     Your browser does not support the video tag.
@@ -59,7 +59,7 @@ const KnowBefore = () =>
                         </div>
 
                         <div className="col-12 col-md-4 mb-4">
-                            <div className="card knowbefore-card" style={ { marginTop: '70px' } }>
+                            <div className="card knowbefore-card card3" >
                                 <img src={ image3 } alt="nature beauty" className="card-img-top" />
                             </div>
                         </div>

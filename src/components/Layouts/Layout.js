@@ -13,13 +13,13 @@ const Layout = () =>
     return (
         <>
             <Header className="header" />
-        <div className="main-content">
-            <KnowBefore />
-            <Search />
-            <Service />
-            <FeaturedTours />
-            <Experience />
-        </div>
+            <div className="main-content">
+                <KnowBefore />
+                <Search />
+                <Service />
+                <FeaturedTours />
+                <Experience />
+            </div>
         </>
     );
 };

@@ -3,10 +3,10 @@
 }
 
 .know-before {
-    padding: '0.3rem 3rem';
-        width: 'fit-content';
-        text-Align: 'justify';
-        font-Style: 'italic';
+    padding: 0.3rem 3rem;
+        width: fit-content;
+        text-Align: justify;
+        font-Style: italic;
 }
 
 .world-icon {
@@ -40,4 +40,14 @@
 .card-img-top {
     height: 100%;
     object-fit: cover;
+}
+.card1{
+    margin-top: 30px;
+}
+.card2{
+    margin-top: 50px;
+
+}
+.card3{
+    margin-top: 70px;
 }

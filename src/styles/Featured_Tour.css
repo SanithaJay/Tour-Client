@@ -1,13 +1,13 @@
 .explore {
-    padding: '0.3rem 3rem';
-    width: 'fit-content';
-    text-Align: 'justify';
-    font-Style: 'italic';
+    padding: 0.3rem 3rem;
+    width: fit-content;
+    text-Align: justify;
+    font-Style: italic;
     margin-left: 10px;
     max-width: 95px;
 }
 .card-image{
-    height: '200px';
+    height: 200px;
     object-fit: 'cover';
 }
 .tour-title-link {
