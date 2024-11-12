@@ -1,7 +1,61 @@
 .client {
     padding: 0.3rem 3rem;
     width: fit-content;
-    text-Align: justify;
-    font-Style: italic;
-
-}
+    text-align: justify;
+    font-style: italic;
+  }
+  
+  .review-slide {
+    padding: 20px;
+  }
+  
+  .review-content {
+    display: flex; /* Display all items in one row */
+    justify-content: start; /* Align reviews to the start of the row */
+    gap: 20px; /* Space between each review item */
+  }
+  
+  .review-item {
+    flex: 0 0 auto; /* Prevent items from stretching and ensure they stay at their natural size */
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff; /* Add background color for each review */
+  }
+  
+  .comment {
+    font-size:16px;
+    color: #555;
+    margin-bottom: 10px;
+    text-align: left; /* Align comments to the left */
+  }
+  
+  .review-image {
+    width: 80px;
+    height: 70px;
+    border-radius: 10%;
+    object-fit: cover;
+  }
+  
+  .review-text {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .name {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .customer {
+    font-size: 0.9rem;
+    color: #888;
+    text-align: center;
+    margin-top:-10px;
+    margin-left:0px;
+  }
+  
+  .slick-prev, .slick-next {
+    z-index: 2;
+    color: #000 !important;
+  }
+  
