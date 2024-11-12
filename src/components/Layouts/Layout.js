@@ -7,6 +7,7 @@ import FeaturedTours from "../Sections/FeaturedTours";
 import Experience from "../Sections/Experience";
 import Gallery from "../Sections/Gallery";
 import ClientsLove from "../Sections/ClientsLove";
+import Subscribe from "../Sections/Subscribe";
 
 
 
@@ -23,6 +24,7 @@ const Layout = () =>
                 <Experience />
                 <Gallery/>
                 <ClientsLove/>
+                <Subscribe/>
             </div>
         </>
     );
