@@ -5,6 +5,8 @@ import Search from "../Sections/Search";
 import Service from "../Sections/Service";
 import FeaturedTours from "../Sections/FeaturedTours";
 import Experience from "../Sections/Experience";
+import Gallery from "../Sections/Gallery";
+import ClientsLove from "../Sections/ClientsLove";
 
 
 
@@ -19,6 +21,8 @@ const Layout = () =>
                 <Service />
                 <FeaturedTours />
                 <Experience />
+                <Gallery/>
+                <ClientsLove/>
             </div>
         </>
     );

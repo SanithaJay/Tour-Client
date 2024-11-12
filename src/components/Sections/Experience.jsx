@@ -8,7 +8,7 @@ const Experience = () =>
         <div className="container mt-5">
             <div className="row">
                 <div className="col-md-6">
-                    <div className="experience-container">
+                    <div >
                         <h6 className="fontFamily p-2 rounded-pill bg-warning experience">
                             Experience
                         </h6>

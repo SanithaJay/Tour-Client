@@ -1,0 +1,32 @@
+.gallery {
+    padding: 0.3rem 3rem;
+    width: fit-content;
+    text-Align: justify;
+    font-Style: italic;
+
+}
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; 
+    max-width: 100%; 
+    margin: 0 auto; 
+}
+
+.gallery-item img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+    transition: transform 0.3s ease; 
+}
+
+.gallery-item {
+    margin-bottom: 20px;
+    overflow: hidden; 
+    border-radius: 10px;
+}
+
+
+.gallery-item img:hover {
+    transform: scale(1.05); 
+}
