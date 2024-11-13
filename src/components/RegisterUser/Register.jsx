@@ -10,9 +10,9 @@ const Register = () =>
 {
 
   const [ credentials, setCredentials ] = useState( {
-    name: '',
-    email: '',
-    password: '',
+    name: undefined,
+    email: undefined,
+    password: undefined,
   } );
 
   const navigate = useNavigate();
@@ -21,7 +21,7 @@ const Register = () =>
   {
     setCredentials( ( prev ) => ( { ...prev, [ e.target.id ]: e.target.value } ) );
   };
-console.log("credentials",credentials);
+  console.log( "credentials", credentials );
   const handleSubmit = async ( e ) =>
   {
 
@@ -34,7 +34,7 @@ console.log("credentials",credentials);
         body: JSON.stringify( credentials ),
       } )
       const result = await res.json();
-      setCredentials({name:'',email:'',password:''});
+      setCredentials( { name: '', email: '', password: '' } );
       if ( result.ok )
       {
         toast( "User registration completed" );
@@ -43,7 +43,7 @@ console.log("credentials",credentials);
       {
         toast( result.message || "Email Already Exists.Please Login." );
       }
-     
+
 
     }
     catch ( error )
@@ -67,36 +67,36 @@ console.log("credentials",credentials);
             <div className="user-image-container d-flex justify-content-center">
               <img src={ user } alt="Profile" className="user-image" />
             </div>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={ handleSubmit }>
               <h3 className="text-center text-white">Register</h3>
               <div className="mb-3">
-                <input type="text" 
-                className="form-control" 
-                id="name" 
-                placeholder="User Name" 
-                required
-                value={credentials.name}
-                 onChange={handleChange} />
+                <input type="text"
+                  className="form-control"
+                  id="name"
+                  placeholder="User Name"
+                  required
+                  value={ credentials.name }
+                  onChange={ handleChange } />
               </div>
               <div className="mb-3">
 
                 <input type="email"
-                 className="form-control" 
-                 id="email"
+                  className="form-control"
+                  id="email"
                   placeholder="Email"
-                   required 
-                   value={credentials.email}
-                   onChange={handleChange} />
+                  required
+                  value={ credentials.email }
+                  onChange={ handleChange } />
               </div>
               <div className="mb-3">
 
                 <input type="password"
-                 className="form-control"
-                  id="password" 
-                  placeholder="Password" 
+                  className="form-control"
+                  id="password"
+                  placeholder="Password"
                   required
-                  value={credentials.password}
-                   onChange={handleChange} />
+                  value={ credentials.password }
+                  onChange={ handleChange } />
               </div>
               <div className="d-grid">
                 <button type="submit" className="btn btn-dark">Create Account</button>

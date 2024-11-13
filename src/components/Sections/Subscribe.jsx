@@ -9,7 +9,7 @@ const Subscribe = () =>
 {
 
     const [ credentials, setCredentials ] = useState( {
-        email: '',
+        email: undefined,
     } );
 
     const navigate = useNavigate();
@@ -36,6 +36,7 @@ const Subscribe = () =>
                 toast("Email added for subscription");
                 navigate("/");
             } else {
+                setCredentials({email:''})
                 toast(result.message || "Failed to subscribe");
             }
         }
