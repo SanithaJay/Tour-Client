@@ -57,12 +57,12 @@ const Register = () =>
   return (
     <div className="container register-container">
       <div className="row">
-        <div className="col-12 col-md-7 register-left">
+        <div className="col-12 col-md-6 register-left">
           <img src={ register } alt="background" className="img-fluid" />
         </div>
 
 
-        <div className="col-12 col-md-5 d-flex justify-content-center align-items-center register-right bg-warning">
+        <div className="col-12 col-md-6 d-flex justify-content-center align-items-center register-right bg-warning">
           <div className="register-form-container">
             <div className="user-image-container d-flex justify-content-center">
               <img src={ user } alt="Profile" className="user-image" />

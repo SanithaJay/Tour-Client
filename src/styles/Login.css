@@ -1,23 +1,23 @@
-.register-container {
-    height: 58.5vh;
+.login-container {
+    height: 51.5vh;
     width:100vh;
-    margin-top: 200px;
+    margin-top: 250px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   }
   
-  .register-left {
+  .login-left {
    
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
-  .register-left img {
+  .login-left img {
     width: 100%;
     height: auto;
   }
   
-  .register-right {
+  .login-right {
   
     padding: 30px;
   }
@@ -25,7 +25,7 @@
     margin-top: 20px; 
   }
   
-  .register-form-container {
+  .login-form-container {
     width: 80%;
   }
   
@@ -58,20 +58,20 @@
   }
   
   @media (max-width: 768px) {
-    .register-container {
+    .login-container {
         height: auto; 
     }
 
-    .register-left {
+    .login-left {
         height: auto; 
         margin-bottom: 20px; 
     }
 
-    .register-right {
+    .login-right {
         padding: 20px; 
     }
 
-    .register-form-container {
+    .login-form-container {
         width: 100%; 
     }
 
