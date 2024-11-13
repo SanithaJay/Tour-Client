@@ -8,6 +8,11 @@ import Experience from "../Sections/Experience";
 import Gallery from "../Sections/Gallery";
 import ClientsLove from "../Sections/ClientsLove";
 import Subscribe from "../Sections/Subscribe";
+import Footer from "../Footer/Footer";
+
+
+
+
 
 
 
@@ -25,6 +30,8 @@ const Layout = () =>
                 <Gallery/>
                 <ClientsLove/>
                 <Subscribe/>
+                <Footer/>
+             
             </div>
         </>
     );

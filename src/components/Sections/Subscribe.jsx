@@ -48,9 +48,9 @@ const Subscribe = () =>
 
     return (
         <>
-            <div className="container-fluid fillColor mt-5 col-12 row no-gutters">
-                {/* Left side content */ }
-                <div className="col-md-6 d-flex flex-column justify-content-center">
+            <div className="container-fluid fillColor mt-5 col-12 row ">
+               
+                <div className="col-md-6 d-flex flex-column justify-content-center ">
                     <div className="subscribe-align">
                         <h3 className="subscribe-heading">Subscribe now for useful travelling information.</h3>
                     </div>
