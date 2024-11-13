@@ -1,13 +1,13 @@
 import { Link, NavLink ,useNavigate} from "react-router-dom";
 import logo from "../../assets/images/logo.png";
-import '../../styles/Header.css';  // Import the CSS file
+import '../../styles/Header.css';  
 
 const Header = () => {
 
     const navigate = useNavigate();
     const handleHomeClick = () => {
-        navigate("/home"); // Navigate to home route
-        window.scrollTo(0, 0); // Scroll to top after navigating
+        navigate("/home"); 
+        window.scrollTo(0, 0); 
     };
     return (
         <div>

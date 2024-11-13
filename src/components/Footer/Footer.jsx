@@ -7,7 +7,7 @@ const Footer = () =>
 
         <footer >
             <div className="text-center p-4">
-                © 2024 Copyright:,Designed and developed by Sanitha S. All rights reserved.
+                © 2024 Copyright,Designed and developed by Sanitha S. All rights reserved.
             </div>
         </footer>
 

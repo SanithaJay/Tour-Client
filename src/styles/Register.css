@@ -1,0 +1,86 @@
+.register-container {
+    height: 61.5vh;
+    width:100vh;
+    margin-top: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .register-left {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .register-left img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .register-right {
+  
+    padding: 30px;
+  }
+  .mb-4 {
+    margin-top: 20px; 
+  }
+  
+  .register-form-container {
+    width: 80%;
+  }
+  
+  .user-image-container {
+    position: relative;
+    top: -50px;  
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+  }
+  
+  .user-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+   
+  }
+  
+  form h3 {
+    margin-bottom: 20px;
+  }
+  
+  form .form-label {
+    font-weight: 600;
+  }
+  
+  form .form-control {
+    margin-bottom: 15px;
+  }
+  
+  @media (max-width: 768px) {
+    .register-container {
+        height: auto; 
+    }
+
+    .register-left {
+        height: auto; 
+        margin-bottom: 20px; 
+    }
+
+    .register-right {
+        padding: 20px; 
+    }
+
+    .register-form-container {
+        width: 100%; 
+    }
+
+    .user-image-container {
+        top: 0; 
+        margin-bottom: 10px; 
+    }
+
+    form h3 {
+        font-size: 1.5rem; 
+    }
+}
