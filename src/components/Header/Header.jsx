@@ -1,20 +1,26 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink ,useNavigate} from "react-router-dom";
 import logo from "../../assets/images/logo.png";
 import '../../styles/Header.css';  // Import the CSS file
 
 const Header = () => {
+
+    const navigate = useNavigate();
+    const handleHomeClick = () => {
+        navigate("/home"); // Navigate to home route
+        window.scrollTo(0, 0); // Scroll to top after navigating
+    };
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light custom-navbar">
                 <div className="container " >
-                    <Link className="navbar-brand custom-brand" to="/">
+                    <Link className="navbar-brand custom-brand" to="/" onClick={handleHomeClick}>
                         <img src={logo} alt="logo" className="logo-img" />
                     </Link>
                    
                     <div className="collapse navbar-collapse " id="navbarNav" >
                         <ul className="navbar-nav ms-auto custom-nav">
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/" activeClassName="active-link">Home</NavLink>
+                                <NavLink className="nav-link" to="/home" activeClassName="active-link">Home</NavLink>
                             </li>
                             <li className="nav-item">
                                 <NavLink className="nav-link" to="/tours" activeClassName="active-link">Tours</NavLink>
