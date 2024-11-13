@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import { BASE_URL } from '../../utils/config';
 import '../../styles/Subscribe.css';
 import tourist from '../../assets/images/male-tourist.png';
@@ -9,7 +9,7 @@ const Subscribe = () =>
 {
 
     const [ credentials, setCredentials ] = useState( {
-        email: undefined,
+        email: '',
     } );
 
     const navigate = useNavigate();
@@ -32,6 +32,7 @@ const Subscribe = () =>
             } );
             const result = await res.json();
             if (res.ok) {
+                setCredentials({email:''})
                 toast("Email added for subscription");
                 navigate("/");
             } else {
@@ -48,9 +49,9 @@ const Subscribe = () =>
 
     return (
         <>
-            <div className="container-fluid fillColor mt-5 col-12 row ">
+            <div className="container-fluid fillColor mt-2 col-12 row no-gutters">
                
-                <div className="col-md-6 d-flex flex-column justify-content-center ">
+                <div className="col-md-6 d-flex flex-column justify-content-center">
                     <div className="subscribe-align">
                         <h3 className="subscribe-heading">Subscribe now for useful travelling information.</h3>
                     </div>
@@ -63,6 +64,7 @@ const Subscribe = () =>
                                 placeholder="Enter your mail"
                                 id="email"
                                 className="subscribe-textbox"
+                                value={credentials.email}
                                 onChange={ handleChange } />
                             <button className="btn btn-warning text-white subscribe-btn" type="submit">Subscribe</button>
                         </form>

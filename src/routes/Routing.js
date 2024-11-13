@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import Home from '../components/Home/Home'
 import About from '../components/Sections/About'
 import Gallery from '../components/Sections/Gallery'
-import Registeration from '../components/Register/Registeration'
+import Registeration from '../components/RegisterUser/Registeration'
 
 
 const Routing = () =>
@@ -11,7 +11,7 @@ const Routing = () =>
     return (
         <Routes>
              <Route path="/" element={<Home />} /> 
-             
+
             <Route path="/home" element={ <Home /> } />
             <Route path="/about" element={ <About /> } />
             <Route path="/gallery" element={ <Gallery /> } />
