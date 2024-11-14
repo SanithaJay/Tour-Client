@@ -33,18 +33,47 @@ const Header = () =>
                     <div className="collapse navbar-collapse " id="navbarNav" >
                         <ul className="navbar-nav ms-auto custom-nav">
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/home" activeClassName="active-link">Home</NavLink>
+                                <NavLink
+                                    className={ ( { isActive } ) =>
+                                        isActive ? "nav-link active-link" : "nav-link"
+                                    }
+                                    to="/home"
+                                >
+                                    Home
+                                </NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/tours" activeClassName="active-link">Tours</NavLink>
+                                <NavLink
+                                    className={ ( { isActive } ) =>
+                                        isActive ? "nav-link active-link" : "nav-link"
+                                    }
+                                    to="/tours"
+                                >
+                                    Tours
+                                </NavLink>
                             </li>
                             { user ? ( <><li className="nav-item">
-                                <NavLink className="nav-link" to="/" activeClassName="active-link" onClick={logoutHandler}>Logout</NavLink>
+                                <NavLink
+                                    className={ ( { isActive } ) =>
+                                        isActive ? "nav-link active-link" : "nav-link"
+                                    }
+                                    to="/"
+                                    onClick={ logoutHandler }
+                                >
+                                    Logout
+                                </NavLink>
                             </li>
                                 <li className="nav-item">
                                     <Link className="btn btn-warning register-btn" to="/edit">{ user.name }</Link>
                                 </li></> ) : ( <><li className="nav-item">
-                                    <NavLink className="nav-link" to="/login" activeClassName="active-link">Login</NavLink>
+                                    <NavLink
+                                        className={ ( { isActive } ) =>
+                                            isActive ? "nav-link active-link" : "nav-link"
+                                        }
+                                        to="/login"
+                                    >
+                                        Login
+                                    </NavLink>
                                 </li>
                                     <li className="nav-item">
                                         <Link className="btn btn-warning register-btn" to="/register">Register</Link>

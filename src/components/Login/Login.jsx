@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 import '../../styles/Login.css';
 import user from '../../assets/images/user.png';
 import login from '../../assets/images/login.png'
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { Link,  useNavigate } from 'react-router-dom';
 import { BASE_URL } from '../../utils/config';
 import { toast } from 'react-toastify';
 import { AuthContext } from '../../context/AuthContext';

@@ -1,0 +1,50 @@
+.tour-search{
+    margin-top: 50px;
+}
+
+.tour-bg{
+    width:100%;
+    height:300px ;
+    background-image:url('../assets/images/tour.jpg');
+    margin-top: -40px;
+    background-size: cover;
+    background-position: center; 
+  background-repeat: no-repeat;
+  filter: brightness(0.7);
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+.tour-font{
+    font-size: 40px;
+    color: white; 
+    z-index: 0.1; 
+   position: relative;
+    
+    
+}
+.tour-pagination {
+  border-color:  #f0ad4e; 
+  border-radius: 50% !important; 
+  color: #000; 
+  background-color: transparent; 
+  padding: 0.35rem 0.75rem; 
+  margin: 0 15px; 
+  font-size: 0.85rem; 
+  font-weight: bold; 
+  box-shadow: none; 
+  transition: all 0.3s ease; 
+}
+
+.tour-pagination:hover {
+  background-color: #f0ad4e; 
+  color: #fff; 
+}
+
+.page-item.active .tour-pagination {
+  background-color: #f0ad4e; 
+  border-color: #f0ad4e; 
+  color: white; 
+  font-weight: bold; 
+  box-shadow: none; 
+}
