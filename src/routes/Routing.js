@@ -6,6 +6,7 @@ import Gallery from '../components/Sections/Gallery'
 import Registeration from '../components/RegisterUser/Registeration'
 import LoginPage from '../components/Login/LoginPage'
 import Tour from '../components/Tour/Tour'
+import SearchTourPage from '../components/Tour/SearchTourPage'
 
 
 const Routing = () =>
@@ -20,6 +21,7 @@ const Routing = () =>
             <Route path="/register" element={ <Registeration /> } />
             <Route path="/login" element={ <LoginPage /> } />
             <Route path="/tours" element={ <Tour /> } />
+            <Route path="/tours/search" element={<SearchTourPage/>}/>
            {/*  
            
            
