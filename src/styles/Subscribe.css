@@ -1,47 +1,102 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
 .fillColor {
-    background-color: #c7e3f2;
-    height: 54vh;
+  background-color: #c7e3f2;
+  height: 440px;
+}
+
+.container-fluid.no-gutters {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+.subscribe-align {
+  margin-left: 120px;
+  width: 500px;
+  border-radius: 5%;
+}
+
+.subscribe-heading {
+  padding-top: 20px;
+}
+
+.subscribe-form {
+  background-color: white;
+  height: 45px;
+  display: flex; 
+}
+
+.subscribe-textbox {
+  width: 400px;
+  height: 40px;
+  border: none;
+  background-color: white;
+}
+
+.subscribe-p {
+  font-size: 16px;
+  width: 660px;
+}
+
+.tourist-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .fillColor {
+    height: auto;  /* Allow height to adjust for mobile */
   }
-  
-  .container-fluid.no-gutters {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  
+
   .subscribe-align {
-    margin-left: 120px;
-    width: 500px;
-    border-radius: 5%;
+    margin-left: 0px;
+    width: 100%;  /* Make subscribe form align properly */
+  }
+
+  .subscribe-heading {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .subscribe-form {
+    display: flex;
+    justify-content: flex-start;  /* Align input and button in row */
+    align-items: center;
+    
+  }
+
+  .subscribe-textbox {
+    width: 365px  /* Make the input take most of the space */
    
   }
-  
-  .subscribe-heading {
-    padding-top: 20px;
+
+  .subscribe-btn {
+    width: auto;  /* Make button size auto based on content */
+    padding: 10px;
+    margin-right:-10px;
+   
   }
-  
-  .subscribe-form {
-    background-color: white;
-    height: 45px;
-  }
-  
-  .subscribe-textbox {
-    width: 400px;
-    height: 40px;
-    border: none;
-    background-color: white;
-  }
-  
+
   .subscribe-p {
-    font-size: 16px;
-    width: 660px;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;  /* Ensure text is centered */
   }
-  
-  
+
   .tourist-image {
-    max-width: 100%;
+    max-width: 100%;  /* Ensure image fits screen */
     height: auto;
-    object-fit: cover;
-    margin-top: 10px;
-    padding-bottom: 20px;
+    margin-top: 20px;
   }
-  
+}

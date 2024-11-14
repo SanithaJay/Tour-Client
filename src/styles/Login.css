@@ -1,6 +1,6 @@
 .login-container {
-    height: 51.5vh;
-    width:100vh;
+    height: 395px;
+    width:800px;
     margin-top: 250px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   }
@@ -83,4 +83,39 @@
     form h3 {
         font-size: 1.5rem; 
     }
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .login-container {
+      height: auto; 
+      margin-top: 50px; /* Adjusted for mobile */
+  }
+
+  .login-left {
+      height: 200px; /* Limit the height of the left image container */
+      margin-bottom: 20px;
+  }
+
+  .login-left img {
+      width: 100%;
+      max-height: 200px; /* Limit image height on mobile */
+      object-fit: cover; /* Maintain aspect ratio and cover the area */
+  }
+
+  .login-right {
+      padding: 20px;
+  }
+
+  .login-form-container {
+      width: 100%; 
+  }
+
+  .user-image-container {
+      top: 0;
+      margin-bottom: 10px;
+  }
+
+  form h3 {
+      font-size: 1.5rem; 
+  }
 }

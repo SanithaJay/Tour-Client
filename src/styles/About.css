@@ -1,12 +1,87 @@
+/* About image styles */
 .about-image {
-    width: 175px;
-    height: auto;
-  }
-  
-  @media (max-width: 768px) {
-    .footer-image {
-      width: 100px; 
-    }
+  width: 175px;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Ensure text is properly spaced and doesn't overflow */
+.about-text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+/* Footer section (links and contact) */
+footer a {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffc107;
+}
+
+/* Social media icons section */
+footer i {
+  font-size: 20px;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+footer i:hover {
+  color: #ffc107;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Stack the columns vertically on smaller screens */
+  .about-image {
+      width: 120px;
   }
 
-  
+  .about-text {
+      font-size: 14px;
+  }
+
+  .text-center {
+      text-align: center;
+  }
+
+  .d-flex {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  /* Adjust layout for smaller screens */
+  .col-md-2, .col-md-3, .col-md-4 {
+      text-align: center;
+      margin-bottom: 20px;
+  }
+
+  /* Adjust links */
+  .footer-links {
+      margin: 20px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  /* For even smaller screens like mobile portrait */
+  .about-image {
+      width: 100px;
+  }
+
+  .about-text {
+      font-size: 12px;
+  }
+
+  .col-md-2, .col-md-3, .col-md-4 {
+      text-align: center;
+      margin-bottom: 15px;
+  }
+
+  footer i {
+      font-size: 18px;
+  }
+}

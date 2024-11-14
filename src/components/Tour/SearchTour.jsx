@@ -17,7 +17,7 @@ const SearchTour = () =>
         const city = params.get( 'city' ) || '';
         const distance = params.get( 'distance' ) || '';
         const maxGroupSize = params.get( 'maxGroupSize' ) || '';
-        console.log( "params:", params, "city:", city, "distance:", distance, "maxsize", maxGroupSize )
+        //console.log( "params:", params, "city:", city, "distance:", distance, "maxsize", maxGroupSize )
 
         const fetchSearchResults = async () =>
         {
@@ -25,7 +25,7 @@ const SearchTour = () =>
             {
                 setLoading( true );
                 const response = await fetch( `${ BASE_URL }/tour/searchTours?city=${ city }&distance=${ distance }&maxGroupSize=${ maxGroupSize }` );
-                console.log( `${ BASE_URL }/tour/searchTours?city=${ city }&distance=${ distance }&maxGroupSize=${ maxGroupSize }` )
+               // console.log( `${ BASE_URL }/tour/searchTours?city=${ city }&distance=${ distance }&maxGroupSize=${ maxGroupSize }` )
                 const result = await response.json();
                 if ( result.success )
                 {

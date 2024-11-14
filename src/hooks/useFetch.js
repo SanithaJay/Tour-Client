@@ -12,7 +12,7 @@ const useFetch = ( url ) =>
     useEffect( () =>
     {
         fetchData();
-    }, [] );
+    } ,[]);
 
 
     const fetchData = async () =>
