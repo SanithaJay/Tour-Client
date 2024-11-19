@@ -1,0 +1,49 @@
+.container {
+    max-width: 1200px;
+  }
+  
+  img {
+    max-height: 400px;
+    object-fit: cover;
+  }
+  
+  h4 {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .btn-warning {
+    background-color: #ffc107;
+    border: none;
+  }
+  
+  .btn-warning:hover {
+    background-color: #e0a800;
+  }
+  
+  .form-control:focus {
+    border-color: #ffc107;
+    box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.25);
+  }
+  
+  .review-text {
+    border-radius: 5%;
+    height: 50px;
+  }
+  img.rounded-circle {
+    border: 1px solid #ddd;
+    padding: 2px;
+  }
+  h5 {
+    font-weight: bold;
+  }
+  .text-muted {
+    font-size: 0.9rem;
+  }
+  .bi-star-fill {
+    font-size: 1rem;
+  }
+  p {
+    margin-bottom: 0.5rem;
+  }
+  

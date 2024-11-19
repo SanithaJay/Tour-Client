@@ -82,7 +82,7 @@ const About = () => {
                         </p>
                         <p className="fw-bold">
                             <i className="bi bi-envelope text-danger m-1"></i>
-                            Email: <span className="fw-normal mx-3">sanithasudevan@gmail.com</span>
+                            Email: <span className="fw-normal ">sanithasudevan@gmail.com</span>
                         </p>
                         <p className="fw-bold">
                             <i className="bi bi-telephone text-danger m-1"></i>

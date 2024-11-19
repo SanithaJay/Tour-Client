@@ -3,7 +3,7 @@ import Search from '../Sections/Search';
 import '../../styles/Tour.css';
 import useFetch from '../../hooks/useFetch';
 import { BASE_URL } from '../../utils/config';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const ITEMS_PER_PAGE = 8; 
 
@@ -11,6 +11,8 @@ const TourPage = () => {
   const { data: tourData, loading, error } = useFetch(`${BASE_URL}/tour/getAllTour`);
   
   const [currentPage, setCurrentPage] = useState(1);
+
+  const navigate=useNavigate();
 
   const isValidTourData = Array.isArray(tourData) && tourData.length > 0;
 
@@ -25,6 +27,10 @@ const TourPage = () => {
   
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
+  };
+
+  const handleBookNowClick = (id) => {
+    navigate(`/tour/${id}`);
   };
 
   return (
@@ -75,7 +81,10 @@ const TourPage = () => {
                       </div>
 
                       <h5 className="card-title">
-                        <Link to="" className="tour-title-link">
+                        <Link
+                         to={`/tour/${tour._id}`}
+                          className="tour-title-link"
+                        >
                           {tour.title}
                         </Link>
                       </h5>
@@ -83,7 +92,7 @@ const TourPage = () => {
                         <h6 className="text-warning">
                           ${tour.price} <span className="text-muted">/per person</span>
                         </h6>
-                        <button className="btn btn-warning btn-sm text-white">Book Now</button>
+                        <button className="btn btn-warning btn-sm text-white"  onClick={() => handleBookNowClick(tour._id)}>Book Now</button>
                       </div>
                     </div>
                   </div>

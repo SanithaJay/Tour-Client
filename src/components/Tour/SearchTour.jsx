@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { BASE_URL } from '../../utils/config';
 import { toast } from 'react-toastify';
 
@@ -10,6 +10,14 @@ const SearchTour = () =>
     const [ loading, setLoading ] = useState( true );
     const [ error, setError ] = useState( null );
 
+
+    const navigate=useNavigate();
+
+        const handleBookNowClick = (id) => {
+            navigate(`/tour/${id}`);
+          };
+        
+
     useEffect( () =>
     {
         
@@ -18,6 +26,8 @@ const SearchTour = () =>
         const distance = params.get( 'distance' ) || '';
         const maxGroupSize = params.get( 'maxGroupSize' ) || '';
         //console.log( "params:", params, "city:", city, "distance:", distance, "maxsize", maxGroupSize )
+
+        
 
         const fetchSearchResults = async () =>
         {
@@ -88,12 +98,19 @@ const SearchTour = () =>
                                         </div>
                                     </div>
 
-                                    <h5 className="card-title">{ tour.title }</h5>
+                                    <h5 className="card-title">
+                        <Link
+                         to={`/tour/${tour._id}`}
+                          className="tour-title-link"
+                        >
+                          {tour.title}
+                        </Link>
+                      </h5>
                                     <div className="d-flex justify-content-between align-items-center">
                                         <h6 className="text-warning">
                                             ${ tour.price } <span className="text-muted">/per person</span>
                                         </h6>
-                                        <button className="btn btn-warning btn-sm text-white">Book Now</button>
+                                        <button className="btn btn-warning btn-sm text-white "onClick={() => handleBookNowClick(tour._id)} >Book Now</button>
                                     </div>
                                 </div>
                             </div>

@@ -16,6 +16,7 @@ const Header = () => {
 
     const logoutHandler = () => {
         dispatch({ type: "LOGOUT" });
+        navigate("/");
     };
 
     return (
@@ -30,7 +31,7 @@ const Header = () => {
 
                 <Navbar.Collapse id="navbar-nav">
                     <Nav className="ms-auto custom-nav">
-                        <Nav.Link as={NavLink} to="/home" className="nav-link">
+                        <Nav.Link as={NavLink} to="/home" className="nav-link" >
                             Home
                         </Nav.Link>
                         <Nav.Link as={NavLink} to="/tours" className="nav-link">
@@ -42,7 +43,7 @@ const Header = () => {
                                     Logout
                                 </Nav.Link>
                                 <Nav.Item>
-                                    <Button className="btn btn-warning register-btn" as={Link} to="/edit">
+                                    <Button className="btn btn-warning register-btn" as={Link} to="/edit" >
                                         {user.name}
                                     </Button>
                                 </Nav.Item>

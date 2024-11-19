@@ -10,23 +10,23 @@
   }
   
   .review-content {
-    display: flex; /* Display all items in one row */
-    justify-content: start; /* Align reviews to the start of the row */
-    gap: 20px; /* Space between each review item */
+    display: flex;
+    justify-content: start; 
+    gap: 20px; 
   }
   
   .review-item {
-    flex: 0 0 auto; /* Prevent items from stretching and ensure they stay at their natural size */
+    flex: 0 0 auto;
     padding: 10px;
     border-radius: 10px;
-    background-color: #fff; /* Add background color for each review */
+    background-color: #fff;
   }
   
   .comment {
-    font-size:16px;
+    font-size:15px;
     color: #555;
     margin-bottom: 10px;
-    text-align: left; /* Align comments to the left */
+    text-align: left; 
   }
   
   .review-image {

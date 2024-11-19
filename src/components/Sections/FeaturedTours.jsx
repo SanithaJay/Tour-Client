@@ -2,14 +2,19 @@ import React from 'react';
 import '../../styles/Featured_Tour.css';
 import useFetch from '../../hooks/useFetch';
 import { BASE_URL } from '../../utils/config';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const FeaturedTours = () => {
   const { data: tourData, loading, error } = useFetch(`${BASE_URL}/tour/getAllTour`);
 
- 
+ const navigate=useNavigate();
   const isValidTourData = Array.isArray(tourData) && tourData.length > 0;
   const limitedTours = isValidTourData ? tourData.filter(tour => tour.featured).slice(0, 8) : [];
+
+  const handleBookNowClick = (id) => {
+    navigate(`/tour/${id}`);
+  };
+
 
   return (
     <div className="container">
@@ -58,7 +63,7 @@ const FeaturedTours = () => {
 
                       <h5 className="card-title">
                         <Link
-                          to="" 
+                         to={`/tour/${tour._id}`}
                           className="tour-title-link"
                         >
                           {tour.title}
@@ -68,7 +73,7 @@ const FeaturedTours = () => {
                         <h6 className="text-warning">
                           ${tour.price} <span className="text-muted">/per person</span>
                         </h6>
-                        <button className="btn btn-warning btn-sm text-white">Book Now</button>
+                        <button className="btn btn-warning btn-sm text-white" onClick={() => handleBookNowClick(tour._id)}>Book Now</button>
                       </div>
                     </div>
                   </div>

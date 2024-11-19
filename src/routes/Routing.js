@@ -7,6 +7,7 @@ import Registeration from '../components/RegisterUser/Registeration'
 import LoginPage from '../components/Login/LoginPage'
 import Tour from '../components/Tour/Tour'
 import SearchTourPage from '../components/Tour/SearchTourPage'
+import SingleTourPage from '../components/Tour/SingleTourPage'
 
 
 const Routing = () =>
@@ -22,11 +23,12 @@ const Routing = () =>
             <Route path="/login" element={ <LoginPage /> } />
             <Route path="/tours" element={ <Tour /> } />
             <Route path="/tours/search" element={<SearchTourPage/>}/>
+            <Route path="/tour/:id" element={ <SingleTourPage /> } />
            {/*  
            
            
             <Route path="/booking" element={ <Booking /> } />
-            <Route path="/tour/:id" element={ <SingleTour /> } />
+            
             <Route path="/review/:id" element={ <Review /> } /> */}
         </Routes>
     )

@@ -49,7 +49,7 @@ const ClientsLove = () =>
           </div>
         </div>
       </div>
-      <div className='mt-2 mx-2'>
+      <div className='mt-2 '>
         <Slider { ...settings }>
           { groupedReviews.map( ( group, index ) => (
             <div className="review-slide" key={ index }>
